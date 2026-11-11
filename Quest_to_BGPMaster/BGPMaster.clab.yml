@@ -1,0 +1,26 @@
+name: BGPMaster
+
+topology:
+  nodes:
+    ceos1:
+      kind: arista_ceos
+      image: ceos:4.34.4M
+    ceos2:
+      kind: arista_ceos
+      image: ceos:4.34.4M
+    srl3:
+      kind: nokia_srlinux
+      type: ixrd1
+      image: ghcr.io/nokia/srlinux:25.10
+    srl4:
+      kind: nokia_srlinux
+      type: ixrd1
+      image: ghcr.io/nokia/srlinux:25.10
+
+  links:
+    [
+      { endpoints: [ "ceos1:eth2", "ceos2:eth2" ] },
+      { endpoints: [ "srl3:e1-1", "ceos1:eth1" ] },
+      { endpoints: [ "srl4:e1-1", "ceos2:eth1" ] },
+      { endpoints: [ "srl3:e1-2", "srl4:e1-2" ] }
+    ]

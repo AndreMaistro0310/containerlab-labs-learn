@@ -1,0 +1,48 @@
+name: evpn # saved as /home/pulung/Containerlab/MissionAlpha_TheAristaBlueprint/evpn.clab.yml
+
+topology:
+  nodes:
+    client1:
+      kind: linux
+      image: alpine:latest
+    client2:
+      kind: linux
+      image: alpine:latest
+    ceos1:
+      kind: arista_ceos
+      image: ceos:4.34.4M
+    ceos2:
+      kind: arista_ceos
+      image: ceos:4.34.4M
+    ceos3:
+      kind: arista_ceos
+      image: ceos:4.34.4M
+    ceos4:
+      kind: arista_ceos
+      image: ceos:4.34.4M
+    ceos5:
+      kind: arista_ceos
+      image: ceos:4.34.4M
+    client3:
+      kind: linux
+      image: alpine:latest
+    client4:
+      kind: linux
+      image: alpine:latest
+    client5:
+      kind: linux
+      image: alpine:latest
+
+  links:
+    # inter-switch link
+    - endpoints: [ "ceos1:eth1", "ceos5:eth1" ]
+    - endpoints: [ "ceos3:eth1", "ceos5:eth2" ]
+    - endpoints: [ "ceos2:eth1", "ceos5:eth3" ]
+    - endpoints: [ "ceos4:eth1", "ceos1:eth2" ]
+    - endpoints: [ "ceos4:eth2", "ceos3:eth2" ]
+    - endpoints: [ "ceos4:eth3", "ceos2:eth2" ]
+    - endpoints: [ "client1:eth1", "ceos3:eth3" ]
+    - endpoints: [ "client2:eth1", "ceos1:eth3" ]
+    - endpoints: [ "client4:eth1", "ceos3:eth4" ]
+    - endpoints: [ "client3:eth1", "ceos1:eth4" ]
+    - endpoints: [ "client5:eth1", "ceos1:eth5" ]

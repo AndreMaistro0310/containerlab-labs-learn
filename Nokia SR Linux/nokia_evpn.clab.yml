@@ -1,0 +1,27 @@
+name: NokiaEVPN
+
+topology:
+  nodes:
+    client1:
+      kind: linux
+      image: alpine:latest
+    client2:
+      kind: linux
+      image: alpine:latest
+    srl5:
+      kind: nokia_srlinux
+      type: ixr-d2l
+      image: ghcr.io/nokia/srlinux:26.7.2
+    srl6:
+      kind: nokia_srlinux
+      type: ixr-d2l
+      image: ghcr.io/nokia/srlinux:26.7.2
+    srl7:
+      kind: nokia_srlinux
+      type: ixr-d2l
+      image: ghcr.io/nokia/srlinux:26.7.2
+  links:
+    - endpoints: [ "srl5:e1-1", "srl7:e1-1" ]
+    - endpoints: [ "srl5:e1-2", "srl6:e1-1" ]
+    - endpoints: [ "srl7:e1-2", "client1:eth1" ]
+    - endpoints: [ "srl6:e1-2", "client2:eth1" ]

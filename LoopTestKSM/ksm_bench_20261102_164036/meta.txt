@@ -1,0 +1,11 @@
+tanggal: 2026-11-02T16:40:36+07:00
+kernel: 6.18.54.1-microsoft-standard-WSL2
+topologi: Nokia.clab.yml
+durasi_s: 600
+interval_s: 15
+ulangan: 2
+clk_tck: 100
+pages_to_scan: 1250
+sleep_millisecs: 21
+memoryksm_containerd: MemoryKSM=yes
+peringatan_run_berubah_di_arm_off: 0

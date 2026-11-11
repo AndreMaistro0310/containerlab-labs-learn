@@ -1,0 +1,48 @@
+{
+  "freeTextAnnotations": [],
+  "freeShapeAnnotations": [],
+  "trafficRateAnnotations": [],
+  "groupStyleAnnotations": [],
+  "networkNodeAnnotations": [],
+  "nodeAnnotations": [
+    {
+      "id": "ceos1",
+      "position": {
+        "x": 620,
+        "y": 120
+      },
+      "icon": "default",
+      "interfacePattern": "eth{n}"
+    },
+    {
+      "id": "ceos2",
+      "position": {
+        "x": 620,
+        "y": 260
+      },
+      "icon": "default",
+      "interfacePattern": "eth{n}"
+    },
+    {
+      "id": "ceos3",
+      "position": {
+        "x": 740,
+        "y": 400
+      },
+      "icon": "default",
+      "interfacePattern": "eth{n}"
+    },
+    {
+      "id": "ceos4",
+      "position": {
+        "x": 460,
+        "y": 280
+      },
+      "icon": "default",
+      "interfacePattern": "eth{n}"
+    }
+  ],
+  "edgeAnnotations": [],
+  "aliasEndpointAnnotations": [],
+  "viewerSettings": {}
+}

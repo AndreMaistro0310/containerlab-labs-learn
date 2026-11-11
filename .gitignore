@@ -1,0 +1,9 @@
+# folder runtime containerlab (berisi SSH key, sertifikat, config hasil generate)
+clab-*/
+**/clab-*/
+
+# backup & temp
+*.bak
+.*.bak
+*.swp
+AristaMissionMonitoring/

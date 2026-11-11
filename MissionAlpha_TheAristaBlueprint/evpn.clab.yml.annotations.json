@@ -1,0 +1,96 @@
+{
+  "freeTextAnnotations": [],
+  "freeShapeAnnotations": [],
+  "trafficRateAnnotations": [],
+  "groupStyleAnnotations": [],
+  "networkNodeAnnotations": [],
+  "nodeAnnotations": [
+    {
+      "id": "client1",
+      "icon": "client",
+      "position": {
+        "x": 120,
+        "y": 260
+      }
+    },
+    {
+      "id": "client2",
+      "icon": "client",
+      "position": {
+        "x": -180,
+        "y": 220
+      }
+    },
+    {
+      "id": "ceos5",
+      "icon": "default",
+      "position": {
+        "x": 7,
+        "y": 63
+      }
+    },
+    {
+      "id": "ceos1",
+      "icon": "default",
+      "position": {
+        "x": -60,
+        "y": 160
+      }
+    },
+    {
+      "id": "ceos2",
+      "icon": "default",
+      "position": {
+        "x": 160,
+        "y": 160
+      }
+    },
+    {
+      "id": "ceos3",
+      "icon": "default",
+      "position": {
+        "x": 63,
+        "y": 161
+      }
+    },
+    {
+      "id": "ceos4",
+      "icon": "default",
+      "position": {
+        "x": 105,
+        "y": 63
+      }
+    },
+    {
+      "id": "client3",
+      "position": {
+        "x": -200,
+        "y": 140
+      },
+      "icon": "client",
+      "interfacePattern": "eth{n}"
+    },
+    {
+      "id": "client4",
+      "position": {
+        "x": 20,
+        "y": 260
+      },
+      "icon": "client",
+      "interfacePattern": "eth{n}"
+    },
+    {
+      "id": "client5",
+      "position": {
+        "x": -120,
+        "y": 260
+      },
+      "icon": "client",
+      "interfacePattern": "eth{n}"
+    }
+  ],
+  "edgeAnnotations": [],
+  "aliasEndpointAnnotations": [],
+  "viewerSettings": {},
+  "cloudNodeAnnotations": []
+}

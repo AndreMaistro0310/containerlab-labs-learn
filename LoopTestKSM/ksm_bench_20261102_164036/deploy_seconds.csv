@@ -1,0 +1,5 @@
+arm,rep,deploy_seconds
+off,1,81
+on,1,71
+on,2,65
+off,2,60

@@ -1,0 +1,108 @@
+{
+  "freeTextAnnotations": [
+    {
+      "id": "freeText_1772007378894",
+      "text": "ceos2_Arista,\nAS : 65001,\n1.1.1.1",
+      "position": {
+        "x": 303.6255496924539,
+        "y": 98.7717000696469
+      },
+      "fontSize": 14,
+      "fontColor": "#839496",
+      "fontWeight": "normal",
+      "fontStyle": "normal",
+      "textDecoration": "none",
+      "textAlign": "left",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "freeText_1772007455171",
+      "text": "ceos2_Arista, AS : 65001, 2.2.2.2",
+      "position": {
+        "x": 612.6709996625777,
+        "y": 95.28949781646241
+      },
+      "fontSize": 14,
+      "fontColor": "#839496",
+      "fontWeight": "normal",
+      "fontStyle": "normal",
+      "textDecoration": "none",
+      "textAlign": "left",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "freeText_1772007496123",
+      "text": "SR-Linux-Nokia1, AS : 65002, 3.3.3.3",
+      "position": {
+        "x": 286.7139382979333,
+        "y": 308.0663407698877
+      },
+      "fontSize": 14,
+      "fontColor": "#839496",
+      "fontWeight": "normal",
+      "fontStyle": "normal",
+      "textDecoration": "none",
+      "textAlign": "left",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "freeText_1772007615630",
+      "text": "SR-Linux-Nokia2, AS : 65002, 4.4.4.4",
+      "position": {
+        "x": 609.9218971477579,
+        "y": 307.5037809396877
+      },
+      "fontSize": 14,
+      "fontColor": "#839496",
+      "fontWeight": "normal",
+      "fontStyle": "normal",
+      "textDecoration": "none",
+      "textAlign": "left",
+      "fontFamily": "Arial"
+    }
+  ],
+  "freeShapeAnnotations": [],
+  "groupStyleAnnotations": [],
+  "networkNodeAnnotations": [],
+  "nodeAnnotations": [
+    {
+      "id": "ceos1",
+      "position": {
+        "x": 400,
+        "y": 140
+      },
+      "icon": "default",
+      "interfacePattern": "eth{n}"
+    },
+    {
+      "id": "ceos2",
+      "position": {
+        "x": 700,
+        "y": 140
+      },
+      "icon": "default",
+      "interfacePattern": "eth{n}"
+    },
+    {
+      "id": "srl3",
+      "position": {
+        "x": 400,
+        "y": 260
+      },
+      "icon": "pe",
+      "interfacePattern": "e1-{n}"
+    },
+    {
+      "id": "srl4",
+      "position": {
+        "x": 700,
+        "y": 260
+      },
+      "icon": "pe",
+      "interfacePattern": "e1-{n}"
+    }
+  ],
+  "edgeAnnotations": [],
+  "aliasEndpointAnnotations": [],
+  "viewerSettings": {}
+}

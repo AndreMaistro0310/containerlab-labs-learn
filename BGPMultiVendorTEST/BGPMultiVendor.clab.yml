@@ -1,0 +1,35 @@
+name: BGPMultiVendor
+topology:
+  nodes:
+    spine01:
+      kind: arista_ceos
+      image: ceos:4.34.4M
+    leaf01:
+      kind: arista_ceos
+      image: ceos:4.34.4M
+    client1:
+      kind: linux
+      image: alpine:latest
+    client2:
+      kind: linux
+      image: alpine:latest
+    srl2leaf02:
+      kind: nokia_srlinux
+      type: ixr-d2l
+      image: ghcr.io/nokia/srlinux:26.7.2
+    leaf03:
+      kind: arista_ceos
+      image: ceos:4.34.4M
+    spine02:
+      kind: arista_ceos
+      image: ceos:4.34.4M
+  links:
+    - endpoints: [ "spine01:eth1", "leaf01:eth1" ]
+    - endpoints: [ "spine01:eth2", "srl2leaf02:e1-1" ]
+    - endpoints: [ "leaf01:eth3", "client1:eth1" ]
+    - endpoints: [ "srl2leaf02:e1-3", "client1:eth2" ]
+    - endpoints: [ "spine01:eth3", "leaf03:eth1" ]
+    - endpoints: [ "client2:eth1", "leaf03:eth3" ]
+    - endpoints: [ "spine02:eth1", "leaf01:eth2" ]
+    - endpoints: [ "spine02:eth2", "srl2leaf02:e1-2" ]
+    - endpoints: [ "spine02:eth3", "leaf03:eth2" ]

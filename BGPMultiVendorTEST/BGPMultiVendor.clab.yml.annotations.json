@@ -1,0 +1,75 @@
+{
+  "freeTextAnnotations": [],
+  "freeShapeAnnotations": [],
+  "trafficRateAnnotations": [],
+  "groupStyleAnnotations": [],
+  "networkNodeAnnotations": [],
+  "nodeAnnotations": [
+    {
+      "id": "spine01",
+      "position": {
+        "x": 400,
+        "y": 40
+      },
+      "icon": "pe",
+      "interfacePattern": "eth{n}"
+    },
+    {
+      "id": "leaf01",
+      "position": {
+        "x": 320,
+        "y": 220
+      },
+      "icon": "pe",
+      "interfacePattern": "eth{n}"
+    },
+    {
+      "id": "srl2leaf02",
+      "position": {
+        "x": 500,
+        "y": 220
+      },
+      "icon": "pe",
+      "interfacePattern": "e1-{n}"
+    },
+    {
+      "id": "client1",
+      "position": {
+        "x": 420,
+        "y": 400
+      },
+      "icon": "client",
+      "interfacePattern": "eth{n}"
+    },
+    {
+      "id": "client2",
+      "position": {
+        "x": 700,
+        "y": 400
+      },
+      "icon": "client",
+      "interfacePattern": "eth{n}"
+    },
+    {
+      "id": "leaf03",
+      "position": {
+        "x": 700,
+        "y": 220
+      },
+      "icon": "pe",
+      "interfacePattern": "eth{n}"
+    },
+    {
+      "id": "spine02",
+      "position": {
+        "x": 660,
+        "y": 40
+      },
+      "icon": "pe",
+      "interfacePattern": "eth{n}"
+    }
+  ],
+  "edgeAnnotations": [],
+  "aliasEndpointAnnotations": [],
+  "viewerSettings": {}
+}
